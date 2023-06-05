@@ -18,7 +18,7 @@ class RoleSeeder extends Seeder
         DB::table('roles')->insert([
             [
                 'name' => 'Admin',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -26,7 +26,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'CEO',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -34,7 +34,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'DM',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -42,7 +42,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'GM',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -50,7 +50,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'AM',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -58,7 +58,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'Leader',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -66,7 +66,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'Sub-Leader',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -74,7 +74,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'Senior',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -82,7 +82,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'Junior',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
@@ -90,7 +90,7 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'Support',
-                'flag' => 1,
+                'deleted_at' => null,
                 'created_by' => 1,
                 'updated_by' => 1,
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),

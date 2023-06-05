@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/test/dep-all',[App\Http\Controllers\Api\AssignController::class,"depAll"]);
+
+Route::post('/test/assign-search',[App\Http\Controllers\Api\AssignController::class,"assignSearch"]);

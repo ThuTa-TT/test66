@@ -18,7 +18,7 @@ class DepartmentSeeder extends Seeder
        DB::table('departments')->insert([
         [
             'dep_name' => 'Admin Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -26,7 +26,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'Sale Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -34,7 +34,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'Doc Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -42,7 +42,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'Development Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -50,7 +50,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'Contract Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -58,7 +58,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'Infra Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -66,7 +66,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'Testing Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),
@@ -74,7 +74,7 @@ class DepartmentSeeder extends Seeder
         ],
         [
             'dep_name' => 'SST Department',
-            'flag' => 1,
+            'deleted_at' => null,
             'created_by' => 1,
             'updated_by' => 1,
             'created_at' => Carbon::now(),

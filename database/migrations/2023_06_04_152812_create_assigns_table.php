@@ -20,7 +20,7 @@ class CreateAssignsTable extends Migration
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
             $table->longText('progress')->nullable();
-            $table->integer('flag')->nullable();
+            $table->softDeletes('deleted_at');
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
             $table->timestamp('created_at');

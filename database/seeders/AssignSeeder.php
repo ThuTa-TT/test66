@@ -33,7 +33,7 @@ class AssignSeeder extends Seeder
                     'start_date' =>  $date->format('Y-m-d'),
                     'end_date' => $date->addWeeks(rand(1, 10))->format('Y-m-d'),
                     'progress' => rand(1,100),
-                    'flag' => 1,
+                    'deleted_at' => null,
                     'created_by' => 1,
                     'updated_by' => 1,
                     'created_at' => Carbon::now(),

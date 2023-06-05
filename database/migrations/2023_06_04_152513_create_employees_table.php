@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('emp_ph_no',20)->nullable();
             $table->string('emp_address')->nullable();
             $table->string('emp_pwd',200)->nullable();
-            $table->integer('flag')->nullable();
+            $table->softDeletes('deleted_at');
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
             $table->timestamp('created_at');
