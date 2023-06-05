@@ -14,19 +14,28 @@ class CreateAssignsTable extends Migration
     public function up()
     {
         Schema::create('assigns', function (Blueprint $table) {
-            $table->bigInteger('id');
-            $table->foreignId('emp_id')->constrained('employees')->nullable();
+            $table->id();
+            $table->bigInteger('emp_id')->unsigned();
             $table->string('title')->nullable();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
             $table->longText('progress')->nullable();
-            $table->integer('flag',1)->nullable();
+            $table->integer('flag')->nullable();
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
+
+           
+
+        });
+
+        Schema::table('assigns', function($table) {
+            $table->foreign('emp_id')->references('id')->on('employees');
         });
     }
+
+    
 
     /**
      * Reverse the migrations.

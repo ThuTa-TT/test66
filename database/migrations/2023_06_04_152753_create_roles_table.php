@@ -14,14 +14,13 @@ class CreateRolesTable extends Migration
     public function up()
     {
         Schema::create('roles', function (Blueprint $table) {
-            $table->bigInteger('id');
-            $table->integer('tole_id')->primary()->nullable();
+            $table->id();
             $table->string('name',50)->nullable();
-            $table->integer('flag',1)->nullable();
+            $table->integer('flag')->nullable();
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
         });
     }
 
