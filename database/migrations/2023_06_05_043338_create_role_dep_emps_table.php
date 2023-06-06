@@ -16,14 +16,14 @@ class CreateRoleDepEmpsTable extends Migration
         Schema::create('role_dep_emps', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('role_id')->unsigned();
-            $table->bigInteger('dep_id')->unsigned();
-            $table->bigInteger('emp_id')->unsigned();
+            $table->bigInteger('department_id')->unsigned();
+            $table->bigInteger('employee_id')->unsigned();
         });
 
         Schema::table('role_dep_emps', function($table) {
             $table->foreign('role_id')->references('id')->on('roles');
-            $table->foreign('dep_id')->references('id')->on('departments');
-            $table->foreign('emp_id')->references('id')->on('employees');
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->foreign('employee_id')->references('id')->on('employees');
         });
     }
 

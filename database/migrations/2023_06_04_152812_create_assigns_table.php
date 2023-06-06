@@ -15,7 +15,7 @@ class CreateAssignsTable extends Migration
     {
         Schema::create('assigns', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('emp_id')->unsigned();
+            $table->bigInteger('employee_id')->unsigned();
             $table->string('title')->nullable();
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
@@ -31,7 +31,7 @@ class CreateAssignsTable extends Migration
         });
 
         Schema::table('assigns', function($table) {
-            $table->foreign('emp_id')->references('id')->on('employees');
+            $table->foreign('employee_id')->references('id')->on('employees');
         });
     }
 

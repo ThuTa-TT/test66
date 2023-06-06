@@ -6,9 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Emplyoee extends Model
+class Employee extends Model
 {
     use HasFactory;
     use SoftDeletes;
     protected $guarded  = [];
+
+    public function assigns(){
+        return $this->hasMany(Assign::class);
+
+    }
 }

@@ -28,7 +28,7 @@ class AssignSeeder extends Seeder
 
             DB::table('assigns')->insert([
                 [
-                    'emp_id' => rand(1,19),
+                    'employee_id' => rand(1,19),
                     'title' => Str::random(10),
                     'start_date' =>  $date->format('Y-m-d'),
                     'end_date' => $date->addWeeks(rand(1, 10))->format('Y-m-d'),
